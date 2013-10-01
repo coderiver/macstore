@@ -12,10 +12,11 @@ $(document).ready(function() {
             $(".js-slider").each(function(){
                 var slider_1 = $(this).find('.js-cycle-1');
                 var slider_2 = $(this).find('.js-cycle-2');
-
+                var prev_nav = $(this).find('.js-cycle-prev');
+                var next_nav = $(this).find('.js-cycle-next');
                 slider_1.cycle({
-                    prev: ".js-cycle-prev",
-                    next: ".js-cycle-next"
+                    prev: prev_nav,
+                    next: next_nav
                 });
                 slider_2.cycle();
 
@@ -33,7 +34,42 @@ $(document).ready(function() {
     }
     init_cycle();
     
+    function select_list() {
+        $(".js-select").click(function(){
+            if ($(this).hasClass("is-active")) {
+                $(this).removeClass("is-active");
+                $(this).find(".select__list").hide();
+            }
+            else {
+                $(".js-select").removeClass("is-active");
+                $(this).addClass("is-active");
+                $(".select__list").hide();
+                $(this).find(".select__list").slideDown("fast");
+            }
+        });
+        $(".js-select .select__list li").click(function(){
+            var text = $(this).text();
+            var id = $(this).attr("data-id");
+            $(this).parent().parent().find("input").val(id);
+            $(this).parent().parent().find(".select__text").text(text);
+        });
+    }
+    select_list();
 
-    
+    function accordion() {
+        $(".js-accord-key").click(function(){
+            if ($(this).hasClass("is-active")) {
+                $(this).removeClass("is-active");
+                $(this).parent().find(".js-accord-list").slideUp("fast");
+            }
+            else {
+                $(".js-accord-key").removeClass("is-active");
+                $(this).addClass("is-active");
+                $(".js-accord-list").slideUp("fast");
+                $(this).parent().find(".js-accord-list").slideDown("fast");
+            }
+        });
+    }
+    accordion();
     
 }); 

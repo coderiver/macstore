@@ -124,6 +124,12 @@ $break-large: 1180px;
 	 -ms-font-smoothing: $val;
 	 -o-font-smoothing: $val;
 }
+@mixin no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
 @mixin selection {
 	& ::selection {
 		@content;

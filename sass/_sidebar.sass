@@ -1,0 +1,127 @@
+.filter-wrap
+	position: relative
+	margin: 0 0 3px 
+	padding: 20px
+	width: 243px
+	+box-sizing(border-box)
+	background: #fff
+	+border-radius(7px) 
+	+box-shadow(0 2px 5px rgba(0,0,0,.15))
+	&:after
+		content: "" 
+		position: absolute
+		left: 20px
+		top: -10px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 0 10px 10px 10px
+		border-color: transparent transparent #fff transparent
+.filter
+	padding: 18px 0
+	border-top: 1px solid #ebebeb 
+	&:first-child
+		border-top: 0
+.filter__title
+	position: relative
+	margin-bottom: 12px
+	font-size: 15px
+	color: #000 
+	cursor: pointer
+	+no-select
+	div
+		display: block
+		width: 130px
+	i
+		position: absolute
+		right: 0
+		top: 0
+		width: 16px
+		height: 16px
+		text-align: center
+		+border-radius(50%)
+		background: #f2f2f2 
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			left: 6px
+			width: 5px
+			height: 1px
+			background: #000  
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			left: 8px
+			width: 1px
+			height: 5px
+			background: #000
+	&.is-active
+
+		i
+			&:before
+				display: none
+.filter__body
+	display: none
+.filter_slider
+	.input,
+	.btn_gray,
+	span
+		display: inline-block
+		vertical-align: middle
+	span
+		font-size: 11px
+		color: #cacaca 
+		width: 18px
+		text-align: center
+		&:first-child
+			text-align: left
+	.input
+		width: 57px
+		padding: 0 5px 
+	.filter__slider
+		display: block
+		margin-bottom: 13px
+	.btn_gray
+		margin-left: 4px
+		padding: 0
+		height: 30px
+		width: 37px
+		+box-shadow(none)
+
+.banne_vert
+	margin: 0
+	text-align: center
+	width: 100%
+	height: 333px
+	.banner__info
+		width: 80%
+	.banner__text
+		width: 145px
+		padding-top: 29px
+		margin: 0 auto 
+		text-align: left
+	.banner__img
+		width: 100%
+		height: 140px
+		margin-bottom: 10px
+		line-height: 140px
+		img
+			position: static
+			vertical-align: middle
+.simple-btn
+	display: inline-block
+	width: 150px
+	height: 36px
+	line-height: 36px
+	text-align: center
+	font-size: 13px
+	color: #fff 
+	border: 2px solid #fff
+	+border-radius(36px)
+	i
+		display: inline-block
+		margin-left: 13px
+		vertical-align: middle
+		+s(arr6)
