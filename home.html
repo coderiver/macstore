@@ -8,9 +8,11 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/jquery.js"></script>
     <script src="js/jquery.cycle2.js"></script>
+    <script src="js/jquery.cycle2.carousel.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.jscrollpane.js"></script>
 	<script src="js/common.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 <div class="l-layout">
@@ -49,7 +51,7 @@
             </div>
         </div>
         <div class="nav-wrap l-container">
-            <ul class="nav">
+            <ul class="nav is-white">
                 <li class="nav__item">
                     <a class="nav__link" href="#">Mac</a>
                     <div class="drop-list scroll-pane">
@@ -67,7 +69,16 @@
                     </div>
                 </li>
                 <li class="nav__item"><a class="nav__link" href="#">iPad</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">iPhone</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">iPhone</a>
+                    <div class="drop-list scroll-pane">
+                        <ul class="subnav">
+                            <li><a href="#">Apple iPhone 5</a></li>
+                            <li><a href="#">Apple iPhone 4S</a></li>
+                            <li><a href="#">Apple iPhone 4</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav__item"><a class="nav__link" href="#">iPod</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Аудио</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Аксессуары</a></li>
@@ -189,7 +200,7 @@
                     <div class="big-slider__right">
                         <div class="big-slider__img">
                             <img src="img/slide5.png" alt="">
-                            <span class="badge badge_big badge_sale">New</span>
+                            <span class="badge badge_big badge_new">New</span>
                             <span class="slider-big__discount">Первым покупателям скидки!</span>
                         </div>
                     </div>
@@ -219,6 +230,688 @@
             </div>
         </div>
         <!-- END sort -->
+        <div class="wrap">
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Air (MD232)</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (MD212) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>14070</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_sale">Sale</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_new">New</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_hot">Hot</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_hot">Hot</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Air (MD232)</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (MD212) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>14070</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_sale">Sale</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_new">New</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_hot">Hot</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img5.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_hot">Hot</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img7.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
         <!-- BEGIN pagination -->
         <div class="pagin">
             <a href="#" class="pagin__prev"><i></i>Предыдущая</a>

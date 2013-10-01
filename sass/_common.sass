@@ -692,3 +692,139 @@ a
 .soc-like
 	clear: both
 	margin: 20px 
+	
+.btn
+	display: inline-block
+	padding: 0 32px 
+	height: 40px
+	line-height: 40px
+	text-align: center 
+	+box-sizing(border-box)
+	font-size: 15px
+	text-decoration: none
+	color: #fff 
+	+border-radius(2px)
+	+background-image(linear-gradient(top, #10abf4, #008ad9))
+	background-color: #0089d9
+	+box-shadow(0 1px 4px rgba(0,0,0,.2))
+	+background-image(linear-gradient(bottom, #0089d9 0%, #0fabf3 100%))
+	&:hover
+		+background-image(linear-gradient(bottom, #10a4ea 0%, #0fabf3 100%))
+	&:active
+		background: #10a4ea
+		+box-shadow(none)
+.item
+	position: relative
+	float: left
+	width: 243px
+	height: 276px
+	+box-sizing(border-box)
+	margin: 0 -2px -2px 0 
+	&:hover
+		z-index: 100  
+		.item__wrap
+			height: 404px
+			top: -70px
+			+transition(box-shadow .2s linear)
+			border: 2px solid transparent
+			+box-shadow(0 0 20px rgba(0,0,0,.15), 0 0 1px #dfdfdf)
+			.btn
+				display: inline-block
+		.item__slider-top    
+			display: block
+		.item__slider-bottom
+			top: 5px
+		.item__slider
+			height: 260px
+		.item__title
+			bottom: 76px
+		.item__prev,
+		.item__next
+			display: block
+		.badge
+			top: 90px
+.item__wrap
+	position: relative
+	padding: 20px 
+	height: 276px
+	+border-radius(7px)
+	+box-sizing(border-box)
+	background: #fff 
+	border: 2px solid #f7f7f7
+	.btn
+		display: none
+		position: absolute
+		bottom: 20px
+		left: 20px
+	.badge
+		position: absolute
+		top: 20px
+		left: 20px
+		z-index: 3
+.item__title
+	position: absolute
+	bottom: 18px
+	left: 20px
+	height: 40px
+	overflow: hidden
+.item__name
+	float: left
+	width: 125px
+	line-height: 1.15
+	a
+		color: $gray 
+		font-size: 12px
+.item__price
+	float: right
+	color: #000 
+	strong
+		font-size: 16px
+		
+.item__prev,
+.item__next
+	position: absolute
+	top: 155px
+	z-index: 2
+	display: none
+.item__prev
+	left: 0
+	+s(arr3)
+.item__next	
+	right: 0
+	+s(arr4)
+.item__slider
+	position: absolute
+	top: 20px
+	left: 20px
+	right: 20px
+	z-index: 1
+	height: 180px
+	text-align: center
+.item__slider-top
+	position: absolute
+	//top: 20px
+	//left: 20px
+	z-index: 1
+	display: none
+	.item__slide
+		margin-right: 4px
+		width: 63px
+		height: 63px
+		line-height: 63px
+		text-align: center
+		+border-radius(2px)
+		border: 1px solid $gray
+		img
+			vertical-align: middle
+	.is-active
+		border-color: #0ea5f3
+			
+.item__slider-bottom
+	.item__slide
+		width: 100%
+		height: 180px !important
+		line-height: 180px
+		overflow: hidden
+		img
+			vertical-align: middle
+			max-height: 180px 
