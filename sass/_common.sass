@@ -81,24 +81,11 @@ ul,ol
 +iphone
 	*	
 		-webkit-text-size-adjust: none
-// common styles, these could be attached to any block with "@extend %wyswyg"
-%wyswyg
-	p
-		margin-bottom: 1em
-	ul,ol
-		margin: 1em 2em
-		list-style: disc
-	ol
-		list-style: decimal
-	blockquote
-		margin: 1em 2em
-	table
-		border-spacing: 0
-		border-collapse: collapse
-		width: 100%
-		td
-			border: 1px solid #ccc
-			padding: 5px
+table
+	border-spacing: 0
+	border-collapse: collapse
+	width: 100%
+	table-layout: fixed
 %item
 	background: #fff
 	+border-radius(5px)
@@ -108,6 +95,9 @@ body
 	min-width: 986px 
 	background: #f7f7f7 
 	font: normal 12px/1.1 Arial, sans-serif
+	+selection
+		background: rgba(0,0,0,.1)
+		color: #000
 	&.is-white-theme
 		.nav__item
 			&:hover

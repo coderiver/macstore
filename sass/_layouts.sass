@@ -8,11 +8,17 @@
     float: right
     width: 723px
     
-.col-1,
-.col-2,
-.col-3,
-.col-4
+.col-1
     float: left
     width: 242px 
+    +box-sizing(border-box)
 .col-1_small
     width: 200px
+    
+.col-2
+    float: left
+    width: 49%
+    margin-left: 2%
+    +box-sizing(border-box)
+    &:first-child
+        margin-left: 0
