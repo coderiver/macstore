@@ -17,6 +17,7 @@
 .page
 	margin-bottom: 22px
 	+border-radius(7px) 
+	overflow: hidden
 .page__wrap
 	padding: 20px 
 	background: #fff
@@ -57,6 +58,7 @@
 .list
 	font-size: 0
 	margin-right: -50px
+	
 .list__item
 	position: relative
 	display: inline-block
@@ -64,17 +66,33 @@
 	padding-top: 34px
 	width: 220px 
 	vertical-align: top
-	&:before
-		content: "" 
+	&:before,i
 		position: absolute
 		top: 0
 		left: 0
+	&:before
+		content: ""
 		+s(arr8)
 .list__text
 	font-size: 12px
 	font-style: italic
 	line-height: 1.5
-	
+
+.list_icons
+	.list__item
+		padding-top: 51px
+		&:before
+			display: none
+.icon1
+	+s(icon1)
+.icon2
+	+s(icon2)
+.icon3
+	+s(icon3)
+.icon4
+	+s(icon4)
+
+
 .table
 	margin-bottom: 16px
 	text-align: left
