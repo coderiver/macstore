@@ -135,3 +135,128 @@
 	td
 		width: 25%
 		padding: 13px 10px 
+		
+
+.order
+	thead
+		th
+			padding: 0 10px 15px
+			text-align: left
+			font-weight: normal
+			border-bottom: 2px solid #000 
+		span
+			display: inline-block
+			position: relative
+			cursor: pointer
+			+no-select
+			&:after
+				content: "" 
+				position: absolute
+				top: 5px
+				right: -22px
+				width: 0px
+				height: 0px
+				border-style: solid
+				border-width: 4px 3.5px 0 3.5px
+				border-color: #cccccc transparent transparent transparent
+	tbody
+		td
+			padding: 0 10px 
+			border-bottom: 1px solid #ccc 
+			&:first-child
+				text-align: center
+				height: 179px
+			&:nth-child(3)
+				padding-top: 44px		
+		.label
+			margin: 0
+	tfoot
+		td
+			height: 73px
+			vertical-align: middle
+			&:first-child
+				text-align: right
+			&:nth-child(3)
+				width: 200px
+			&:nth-child(4)
+				text-align: right
+		.order-price
+			font-size: 25px
+			+hel_b
+			color: #000 
+	thead,
+	tbody
+		td, th 
+			&:first-child
+				width: 210px
+				vertical-align: middle
+			&:nth-child(2)
+				width: 335px
+				vertical-align: middle
+			&:nth-child(3)
+				width: 100px
+			&:nth-child(4)
+				width: 85px
+				padding: 0
+			&:nth-child(5)
+				.order-price
+					color: #000 
+.order__title
+	margin-bottom: 15px
+	a
+		font-size: 20px
+		+hel_l
+		color: #000 
+.order-price
+	font-size: 20px
+	+hel_l
+	span
+		font-size: 12px
+.order__quant
+	width: 47px
+	position: relative
+	top: 9px
+	
+.order-recalc
+	padding-top: 20px
+	+clr
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(arr9)
+.order-recalc__main
+	float: right
+	.order-price,
+	.btn,
+	.order-recalc__title,
+		display: inline-block
+		vertical-align: middle
+	.order-price
+		width: 127px
+		color: #000
+		font-size: 25px
+		+hel_b 
+		span
+			font-family: Arial,sans-serif 
+.order-recalc__title
+	width: 105px 
+	
+.list_radio
+	.list__item
+		&:before
+			display: none
+		.radio
+			position: absolute
+			top: 0
+			left: 0
+	.title-l-3
+		display: block
+
+.personal-form
+	.title-l-2
+		margin: 0 0 18px 
+	.btn_fluid
+		margin: 23px 0 19px
+	.checkbox-wrap
+		span
+			font-style: italic

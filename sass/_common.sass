@@ -319,7 +319,8 @@ a
 	+box-shadow(1px 0 0 #202021, -1px 0 0 #4a4c4d)
 	background: #2a2b2c 
 	+background-image(linear-gradient(bottom, #2a2b2c 0%, #3e4042 100%))
-	&:hover
+	&:hover,
+	&.is-active
 		color: #fff 
 		+background-image(linear-gradient(top, #2b2c2c 0%, #3e4142 100%))
 .subnav
@@ -464,26 +465,52 @@ a
 // ---------------------------- common blocks ---------------------------------- //
 .input-wrap
 	display: block
+	position: relative
+	margin-bottom: 12px
 	span
 		display: block
+		margin-bottom: 10px
 		color: #000
 		font-size: 12px 
-
+	&.is-valid-error
+		.input
+			border-color: #e38c8c
+		.input-error
+			display: block
+	&.is-valid-ok
+		.input
+			border-color: #16bb00
 .input 
 	display: block
 	padding: 0 13px 
 	width: 100%
 	height: 30px
-	background: #fff 
 	+box-sizing(border-box)
+	border: 1px solid #e6e6e6
 	+border-radius(3px)
-	+box-shadow(inset 1px 1px 4px rgba(0,0,0,.2))
+	background: #fff
+	+hel_r
+	font-size: 12px
+	+box-shadow(inset 1px 1px 1px rgba(0,0,0,.06))
 	+placeholder
 		font: italic 11px Arial,sans-serif
 		color: $gray	
 	&:focus
-		+box-shadow(0 0 1px rgba(0,0,0,.7))
-
+		+box-shadow(none)
+		border: 1px solid #ccc
+.input_textarea
+	padding: 13px
+	height: 80px
+	max-height: 150px
+	resize: vertical
+.input-error
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	font-size: 11px
+	color: #e38c8c 
+	font-style: normal
 .drop-list
 	display: none
 	background: #3e4142 
@@ -708,6 +735,7 @@ a
 .title-l-3
 	+hel_l
 	color: #000 
+	font-weight: normal
 	
 .title-l-1
 	font-size: 30px
@@ -742,19 +770,22 @@ a
 	&:active
 		background: #10a4ea
 		+box-shadow(none)
+.btn_fluid
+	width: 100%
 .btn_gray
 	padding: 0 8px 
 	height: 28px
 	line-height: 28px
 	text-align: center
-	color: #000 
+	color: $gray
 	+border-radius(3px)
 	border: 1px solid #e1e1e1
 	background: #f7f7f7
+	font-size: 12px
 	+box-shadow(0 1px 4px rgba(0,0,0,.06))
 	+background(linear-gradient(bottom, #f7f7f7 0%, #fff 100%))
 	&:hover
-		+background(linear-gradient(bottom, #d8d8d8 0%, #fff 100%))
+		+background(linear-gradient(bottom, #f2f2f2 0%, #fff 100%))
 	&:active
 		+box-shadow(none)
 		background: #f7f7f7 
@@ -919,10 +950,16 @@ a
 		line-height: 0.8
 	div
 		line-height: 1
+	strong
+		font-weight: normal
+		color: #727171 
 	.btn-del
 		position: absolute
 		top: 12px
 		right: 10px
+.label_fluid
+	width: auto
+	margin: 0 20px 
 .btn-del
 	display: inline-block
 	vertical-align: middle
@@ -1046,3 +1083,41 @@ a
 			top: 7px
 			+s(checkbox)
  
+.radio
+	position: relative
+	display: inline-block
+	padding-left: 20px
+	height: 20px
+	line-height: 20px
+	input,span
+		position: absolute
+		left: 0
+		top: 0
+		width: 20px
+		height: 20px
+	input
+		opacity: 0
+		z-index: 2
+		&:checked
+			+ span
+				&:before
+					display: block
+	span
+		+box-sizing(border-box)
+		border: 1px solid #e6e6e6
+		+border-radius(50%) 
+		background: #fff
+		+box-shadow(inset 1px 1px 1px rgba(0,0,0,.06))
+		&:before
+			content: ""
+			display: none
+			position: absolute
+			top: 5px
+			left: 5px
+			width: 8px
+			height: 8px
+			+border-radius(50%)
+			background: #eaeaea
+			+background-image(linear-gradient(bottom, #0995ee 0%, #13bbf9 100%))
+ 
+
