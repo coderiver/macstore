@@ -621,6 +621,9 @@ a
 		font-size: 30px
 		+hel_l 
 		border-bottom: none 
+	i
+		color: #000
+		font-style: normal 
 .sort__nav
 	float: right
 	button
@@ -733,15 +736,17 @@ a
 .title-l-1,
 .title-l-2,
 .title-l-3
-	+hel_l
+	
 	color: #000 
 	font-weight: normal
 	
 .title-l-1
 	font-size: 30px
+	+hel_l
 .title-l-2
 	font-size: 25px
 	margin: 27px 0 18px 
+	+hel_l
 .title-l-3
 	margin: 0 0 15px 
 	font-size: 16px 
@@ -1120,4 +1125,21 @@ a
 			background: #eaeaea
 			+background-image(linear-gradient(bottom, #0995ee 0%, #13bbf9 100%))
  
-
+.breadcrumbs
+	float: left
+	font-size: 11px
+	a,span
+		display: inline-block
+		margin: 0 10px 
+		line-height: 1
+	a
+		position: relative
+		border-bottom: 1px dotted 
+		&:after
+			content: "" 
+			position: absolute
+			top: 4px
+			right: -13px
+			+s(arr5)
+	span
+		font-style: italic

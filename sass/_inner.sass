@@ -260,3 +260,161 @@
 	.checkbox-wrap
 		span
 			font-style: italic
+			
+
+.tab-cont
+	display: none
+	+column-count(2)
+	+column-gap(18px)
+	.table
+		margin-bottom: 0
+
+.item-gallery
+	position: relative
+	float: left
+	width: 644px
+	height: 490px
+	+clr
+	.pager
+		z-index: 100
+		left: 95px
+.item-descr
+	overflow: hidden
+	.title-l-1
+		margin-bottom: 20px
+	.label
+		margin: 0 7px 0 0
+		
+.item-state
+	display: inline-block
+	position: relative
+	vertical-align: middle
+	padding-left: 34px
+	width: 70px
+	height: 25px
+	line-height: 25px
+	&:before
+		content: "" 
+		position: absolute
+		left: 0
+		top: 0
+	span
+		display: inline-block
+		line-height: 1
+		vertical-align: middle
+	&.is-ok
+		color: #76b509
+		&:before
+			+s(state-ok)
+.item-descr__text
+	position: relative
+	margin: 9px 0 21px
+	padding-bottom: 23px
+	p
+		margin-bottom: 0
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 30px
+		height: 1px
+		background: #d9d9d9
+
+.order-price_item
+	margin-bottom: 20px
+	font-size: 30px
+	color: #000 
+	
+.info-list
+	margin: 0 -20px 
+	font-size: 11px
+	+box-shadow(0 -1px 4px rgba(0,0,0,.1),0 1px 4px rgba(0,0,0,.1))
+	line-height: 1.1
+	+clr
+	p
+		line-height: 1.1
+		font-style: italic
+		font-size: 12px
+.info-list__item
+	position: relative
+	float: left
+	padding: 18px 10px 0 50px 
+	height: 80px
+	width: 20%
+	border-left: 1px solid #ebebeb 
+	+box-sizing(border-box)
+	&:first-child
+		border-left: 0
+		padding-top: 20px
+		.info-list__title
+			position: relative
+			font-size: 16px
+			line-height: 0.8
+			color: #000 
+			&:after
+				content: "→"
+				position: absolute
+				right: 0
+				top: 0
+	i
+		position: absolute
+		top: 20px
+		left: 20px
+
+@for $i from 1 through 5
+	.info-list__icon#{$i} 
+		+s(icon-list#{$i})
+.info-list__title
+	margin-bottom: 7px
+	color: #5e6366 
+	
+.item-gallery__left
+	position: absolute !important
+	left: 0
+	top: 0
+	width: 70px
+	//height: 430px !important
+	div
+		margin-bottom: 5px
+		width: 65px
+		height: 65px
+		text-align: center
+		line-height: 65px
+		border: 1px solid #ebe7e7
+		+border-radius(4px)
+		&.is-active
+			border-color: #0ea5f3 
+	.cycle-sentinel
+		border: 1px solid transparent
+.item-gallery__right
+	float: right
+	width: 570px
+	a
+		display: block
+		width: 100%
+		height: 430px
+		line-height: 430px
+		text-align: center
+		img
+			vertical-align: middle
+			
+.zoom-in  
+	position: absolute
+	left: -20px
+	bottom: 37px
+	z-index: 200
+	width: 85px
+	height: 30px
+	line-height: 30px
+	text-align: center
+	+border-radius(0 15px 15px 0)
+	background: #fbfbfb
+	@include box-shadow(1px 1px 0 rgba(255,255,255,.86), inset 1px 1px 1px rgba(0,0,0,.1))
+
+	i
+		display: inline-block
+		margin-left: 6px
+		vertical-align: middle
+		+s(zoom)
+        

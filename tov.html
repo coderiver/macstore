@@ -1,0 +1,662 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Tov</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cycle2.js"></script>
+    <script src="js/jquery.cycle2.carousel.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.js"></script>
+    <script src="js/common.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+<div class="l-layout">
+    <!-- BEGIN Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="l-container">
+                <ul class="header__nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Гарантия и сервис</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="soc">
+                    <a href="#" class="soc__fb"></a>
+                    <a href="#" class="soc__tw"></a>
+                    <a href="#" class="soc__vk"></a>
+                    <a href="#" class="soc__gp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="l-container">
+                <h1 class="header__logo">
+                    <a href="#"><strong>mac</strong>.ua</a>
+                    <span>Интернет магазин техники Apple</span>
+                </h1>
+                <div class="header__contacts">
+                    <span class="header__tel">(044) 966 0724</span>
+                    <span class="header__work">График работы <br> колл-центра пн-вс: 800 - 2200</span>
+                </div>
+                <div class="header__basket">
+                    <strong>Корзина</strong>
+                    <span>2 товара на 2500 грн.</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap l-container">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Mac</a>
+                    <div class="drop-list scroll-pane">
+                        <ul class="subnav">
+                            <li><a href="#">MacBook Air</a></li>
+                            <li><a href="#">MacBook Pro 13″</a></li>
+                            <li><a href="#">MacBook Pro 15″</a></li>
+                            <li><a href="#">MacBook Pro 13″ Retina</a></li>
+                            <li><a href="#">MacBook Pro 15″ Retina</a></li>
+                            <li><a href="#">iMac</a></li>
+                            <li><a href="#">Mac mini</a></li>
+                            <li><a href="#">Mac Pro</a></li>
+                            <li><a href="#">Мониторы Apple</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">iPad</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">iPhone</a>
+                    <div class="drop-list scroll-pane">
+                        <ul class="subnav">
+                            <li><a href="#">Apple iPhone 5</a></li>
+                            <li><a href="#">Apple iPhone 4S</a></li>
+                            <li><a href="#">Apple iPhone 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">iPod</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Аудио</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Аксессуары</a></li>
+            </ul>
+            <div class="header__search">
+                <input type="input" class="input" placeholder="Поиск по сайту">
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <div class="l-container">
+        <div class="page-title">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> 
+                <a href="#">Mac</a> 
+                <a href="#">Mac Pro</a> 
+                <span>Apple MacPro (MD770)</span>
+            </div>
+            <a class="page-title__prev" href="#"><i></i>Вернуться назад</a>
+        </div>
+        <div class="page">
+            <div class="page__wrap">
+                <div class="wrap">
+                    <div class="item-gallery">
+                        <div class="js-gallery">
+                            <div class="item-gallery__left js-cycle js-cycle-2"
+                                data-cycle-slides="> div"
+                                data-cycle-timeout="0"
+                                data-cycle-fx="carousel"
+                                data-cycle-carousel-visible="5" 
+                                data-cycle-slide-active-class="is-active"
+                                data-allow-wrap="false"
+                                data-cycle-carousel-vertical=true
+                                >
+                                <div>
+                                    <img src="img/img1.png" width="50" height="20">
+                                </div>
+                                <div>
+                                    <img src="img/img2.png" width="50" height="20">
+                                </div>
+                                <div>
+                                    <img src="img/img3.png" width="50" height="20">
+                                </div>
+                                <div>
+                                    <img src="img/img4.png" width="50" height="20">
+                                </div>
+                                <div>
+                                    <img src="img/img5.png" width="50" height="20">
+                                </div>
+                            </div>
+                            <div class="item-gallery__right js-cycle js-cycle-1"
+                                data-cycle-slides="> a"
+                                data-cycle-timeout="0"
+                                data-cycle-auto-height="container"
+                                data-cycle-pager-active-class="is-active"
+                                data-cycle-pager-template="<button></button>"
+                                data-cycle-pager=".pager"
+                                >
+                                <a href="#">
+                                    <img src="img/img1.png">
+                                </a>
+                                <a href="#">
+                                    <img src="img/img2.png">
+                                </a>
+                                <a href="#">
+                                    <img src="img/img3.png">
+                                </a>
+                                <a href="#">
+                                    <img src="img/img4.png">
+                                </a>
+                                <a href="#">
+                                    <img src="img/img5.png">
+                                </a>
+                            </div>
+                            <button class="item__prev js-cycle-prev"></button>
+                            <button class="item__next js-cycle-next"></button>
+                        </div>
+                        <div class="pager"></div>
+                        <a href="#" class="zoom-in">Zoom <i></i></a>
+                    </div>
+                    <div class="item-descr">
+                        <h1 class="title-l-1">Apple MacBook Pro (ME664) Retina Display</h1>
+                        <div class="label label_fluid"><div>Код товара: <strong>000019556</strong></div></div>
+                        <span class="item-state is-ok"><span>Есть в наличии</span></span>
+                        <div class="item-descr__text">
+                            <p>Самый мощный компьютер Apple. Настоящая рабочая станция, способная справиться с задачами, которые не под силу многим другим компьютерам. Совершенная архитектура и лучшие комплектующие. Mac Pro — выбор профессионалов. </p>
+                        </div>
+                        <div class="order-price order-price_item">999 999 <span>грн</span> </div>
+                        <a href="#" class="btn">Добавить в корзину</a>
+                    </div>
+                </div>
+                <ul class="info-list">
+                    <li class="info-list__item">
+                        <i class="info-list__icon1"></i>
+                        <div class="info-list__title">Информация о товаре</div>
+                    </li>
+                    <li class="info-list__item">
+                        <i class="info-list__icon2"></i>
+                        <div class="info-list__title">Доставка по Киеву</div>
+                        <p>Самовывоз и курьером на следующий день</p>
+                    </li>
+                    <li class="info-list__item">
+                        <i class="info-list__icon3"></i>
+                        <div class="info-list__title">Возврат товара на протяжении 14 дней</div>
+                    </li>
+                    <li class="info-list__item">
+                        <i class="info-list__icon4"></i>
+                        <div class="info-list__title">Удобные способы оплаты с гарантией безопасности</div>
+                    </li>
+                    <li class="info-list__item">
+                        <i class="info-list__icon5"></i>
+                        <div class="info-list__title">Гарантия качества 12 месяцев</div>
+                    </li>
+                </ul>
+                <div class="sort js-tab">
+                    <div class="sort__links">
+                        <span data-tab="js-tab-cont1" class="js-tab-link">Характеристики</span>
+                        <span data-tab="js-tab-cont2" class="js-tab-link">Описание</span>
+                        <span data-tab="js-tab-cont3" class="js-tab-link">Отзывы <i>15</i></span>
+                    </div>
+                </div>
+                <div class="tab-cont js-tab-cont js-tab-cont1">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Производитель:</td>
+                                <td>Apple</td>
+                            </tr>
+                            <tr>
+                                <td>Серия:</td>
+                                <td>Mac Pro (Mid 2012)</td>
+                            </tr>
+                            <tr>
+                                <td>Частота, GHz:</td>
+                                <td>3,2</td>
+                            </tr>
+                            <tr>
+                                <td>Тип процессора:</td>
+                                <td>Intel Xeon</td>
+                            </tr>
+                           <tr>
+                                <td>Производитель:</td>
+                                <td>FireWire 800 (7 Вт) / 4 x USB 2.0 / mini-DVI / VGA (при использовании дополнительного адаптера) / Mini DisplayPort / gLAN (RJ-45) / аудиовход / аудиовыход / кард-ридер</td>
+                            </tr>
+                            <tr>
+                                <td>Серия:</td>
+                                <td>Mac Pro (Mid 2012)</td>
+                            </tr>
+                            <tr>
+                                <td>Частота, GHz:</td>
+                                <td>3,2</td>
+                            </tr>
+                            <tr>
+                                <td>Тип процессора:</td>
+                                <td>Intel Xeon</td>
+                            </tr>
+                            <tr>
+                                <td>Серия:</td>
+                                <td>Mac Pro (Mid 2012)</td>
+                            </tr>
+                            <tr>
+                                <td>Частота, GHz:</td>
+                                <td>3,2</td>
+                            </tr>
+                            <tr>
+                                <td>Тип процессора:</td>
+                                <td>Intel Xeon</td>
+                            </tr>
+                            <tr>
+                                <td>Производитель:</td>
+                                <td>Apple</td>
+                            </tr>
+                            <tr>
+                                <td>Серия:</td>
+                                <td>Mac Pro (Mid 2012)</td>
+                            </tr>
+                            <tr>
+                                <td>Частота, GHz:</td>
+                                <td>3,2</td>
+                            </tr>
+                            <tr>
+                                <td>Тип процессора:</td>
+                                <td>Intel Xeon</td>
+                            </tr>
+                           <tr>
+                                <td>Производитель:</td>
+                                <td>FireWire 800 (7 Вт) / 4 x USB 2.0 / mini-DVI / VGA (при использовании дополнительного адаптера) / Mini DisplayPort / gLAN (RJ-45) / аудиовход / аудиовыход / кард-ридер</td>
+                            </tr>
+                            <tr>
+                                <td>Серия:</td>
+                                <td>Mac Pro (Mid 2012)</td>
+                            </tr>
+                            <tr>
+                                <td>Частота, GHz:</td>
+                                <td>3,2</td>
+                            </tr>
+                            <tr>
+                                <td>Тип процессора:</td>
+                                <td>Intel Xeon</td>
+                            </tr>
+                            <tr>
+                                <td>Серия:</td>
+                                <td>Mac Pro (Mid 2012)</td>
+                            </tr>
+                            <tr>
+                                <td>Частота, GHz:</td>
+                                <td>3,2</td>
+                            </tr>
+                            <tr>
+                                <td>Тип процессора:</td>
+                                <td>Intel Xeon</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-cont js-tab-cont js-tab-cont2">
+                    <h3 class="title-l-3">Отличительные особенности</h3>
+                    <p>Apple Mac Pro — по праву один из мощнейших персональных компьютеров. Он инновационный, надежный и невероятно мощный. До 12 ядер чистой мощи с новыми процессорами Intel Xeon, что обеспечивает быстрое выполнение сложнейших математических вычиaслений и уверенную работу всей системы в целом.</p> 
+                    <p>Технология Turbo Boost позволяет динамически повышать производительность, увеличивая тактовую частоту процессора в случаях, когда приложение использует не все ядра. Технология Hyper-Threading запускает одновременно два потока на каждом ядре для обеспечения большей производительности в моменты пиковых нагрузок. Это означает, что максимальное количество виртуальных ядер может достигать 24. </p>
+                    <p>Появилась возможность использования SSD-накопителей ёмкостью 512 ГБ каждый, которые можно заменять, не нарушая работу компьютера. </p>
+                    <h3 class="title-l-3">Комплектация</h3>
+                    <p>Mac Pro, кабель питания, проводная клавиатура Apple с дополнительным цифровым блоком, беспроводная сенсорная мышь Apple Magic Mouse, кабель-удлинитель USB для подключения клавиатуры, DVD-диски с программным обеспечением, документация.</p>
+                    <p>В стандартную поставку также входит программное обеспечение Boot Camp, позволяющее использовать операционные системы семейства Microsoft Windows (сами системы Windows покупаются отдельно).</p>
+                </div>
+                <div class="js-tab-cont js-tab-cont3">
+                    
+                </div>
+                <div class="soc-like"><img src="img/soc-like.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="main l-container">
+        <div class="sort">
+            <div class="sort__links">
+                <span class="is-active">Смотрите также</span>
+                <!-- <span>Новые поступления</span>
+                <span>Скидки</span>           
+                <span>Рекоммендуем</span> -->
+            </div>
+            <div class="sort__nav">
+                <button class="sort__prev"></button>
+                <button class="sort__next"></button>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img1.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Air (MD232)</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img2.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (MD212) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>14070</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_sale">Sale</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img3.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                            <div class="is-old-price">12250 грн</div> 
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_new">New</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__wrap">
+                    <div class="item__slider js-slider">
+                        <div class="js-cycle item__slider-top js-cycle-2"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-fx="carousel"
+                            data-cycle-carousel-visible="3"
+                            data-cycle-slide-active-class="is-active"
+                            data-allow-wrap="false"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png" width="50" height="20">
+                            </div>
+                        </div>
+                        <div class="js-cycle item__slider-bottom js-cycle-1"
+                            data-cycle-slides="> div"
+                            data-cycle-timeout="0"
+                            data-cycle-auto-height="container"
+                            >
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                            <div class="item__slide">
+                                <img src="img/img4.png">
+                            </div>
+                        </div>
+                        <button class="item__prev js-cycle-prev"></button>
+                        <button class="item__next js-cycle-next"></button>
+                    </div>
+                    <div class="item__title">
+                        <div class="item__name">
+                            <a href="#">Apple MacBook Pro (Z0PZ0000W) Retina Display</a>
+                        </div>
+                        <div class="item__price">
+                            <strong>10250</strong> грн
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <span class="badge badge_hot">Hot</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+<!-- BEGIN footer -->
+<footer class="footer">
+    <div class="footer__top">
+        <div class="l-container wrap">
+            <div class="footer__col">
+                <div class="footer__title">Mac</div>
+                <ul class="footer__nav">
+                    <li><a href="#">MacBook Air</a></li>
+                    <li><a href="#">MacBook Pro 13″</a></li>
+                    <li><a href="#">MacBook Pro 15″</a></li>
+                    <li><a href="#">MacBook Pro 13″ Retina</a></li>
+                    <li><a href="#">MacBook Pro 15″ Retina</a></li>
+                    <li><a href="#">iMac</a></li>
+                    <li><a href="#">Mac mini</a></li>
+                    <li><a href="#">Mac Pro</a></li>
+                    <li><a href="#">Мониторы Apple</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">Mac</div>
+                <ul class="footer__nav">
+                    <li><a href="#">iPad mini</a></li>
+                    <li><a href="#">iPad с дисплеем Retina</a></li>
+                    <li><a href="#">Apple iPad 3-го поколения</a></li>
+                    <li><a href="#">Apple iPad 2</a></li>
+                </ul>
+                <div class="footer__title">Mac</div>
+                <ul class="footer__nav">
+                    <li><a href="#">Apple iPhone 5</a></li>
+                    <li><a href="#">Apple iPhone 4S</a></li>
+                    <li><a href="#">Apple iPhone 4</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">iPod</div>
+                <ul class="footer__nav">
+                    <li><a href="#">Apple iPod touch</a></li>
+                    <li><a href="#">Apple iPod nano</a></li>
+                    <li><a href="#">Apple iPod shuffle</a></li>
+                    <li><a href="#">Apple iPod classic</a></li>
+                </ul>
+                <div class="footer__title">Аудио</div>
+                <ul class="footer__nav">
+                    <li><a href="#">Акустика</a></li>
+                    <li><a href="#">Наушники</a></li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col_last">
+                <div class="footer__title">Аксессуары</div>
+                <ul class="footer__nav">
+                    <li><a href="#">Зарядные устройства</a></li>
+                    <li><a href="#">Графические планшеты</a></li>
+                    <li><a href="#">Фотокамеры</a></li>
+                    <li><a href="#">Игрушки</a></li>
+                    <li><a href="#">Кабели и переходники</a></li>
+                    <li><a href="#">Клавиатуры, мышки, коврики</a></li>
+                    <li><a href="#">Сумки для ноутбуков</a></li>
+                    <li><a href="#">Чехлы для iPhone</a></li>
+                    <li><a href="#">Чехлы для iPad</a></li>
+                    <li><a href="#">Чехлы для ноутбуков</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="l-container wrap">
+            <div class="footer__col">
+                <p>Mac.com © 2013 <br> Все права защищены.</p>
+                <div class="soc soc_white">
+                    <a href="#" class="soc__fb"></a>
+                    <a href="#" class="soc__tw"></a>
+                    <a href="#" class="soc__vk"></a>
+                    <a href="#" class="soc__gp"></a>
+                </div>
+            </div>
+            <div class="footer__col footer__col_width">
+                <ul class="footer__links">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Гарантия и сервис</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer__info">
+                    <p>Внешний вид товара может отличаться от представленного на фотографии. Технические характеристики товаров уточняйте на сайте производителя.
+                    </p>
+                    <a href="#" class="created-by">1Desers design</a>
+                </div>
+            </div>
+            <div class="footer__col footer__col_cont">
+                <div class="footer__contacts">
+                    <span>(044) 966 0724</span>
+                    <a href="mailto:support@mac.com">support@mac.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END footer -->
+<a class="chat-link" href="#">
+    <span>Консультант</span>
+    <i></i>
+</a>
+</body>
+</html>
