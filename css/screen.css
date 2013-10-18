@@ -31,8 +31,6 @@ ul, ol { list-style-type: none; }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; table-layout: fixed; }
 
 body { color: #a3a3a3; min-width: 986px; background: #f7f7f7; font: normal 12px/1.1 Arial, sans-serif; }
-body ::selection { background: rgba(0, 0, 0, 0.1); color: black; }
-body ::-moz-selection { background: rgba(0, 0, 0, 0.1); color: black; }
 body.is-white-theme .nav__item:hover .nav__link { background: #edeff0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #edeff0), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(top, #edeff0 0%, #ffffff 100%); background-image: -moz-linear-gradient(top, #edeff0 0%, #ffffff 100%); background-image: -o-linear-gradient(top, #edeff0 0%, #ffffff 100%); background-image: linear-gradient(top, #edeff0 0%, #ffffff 100%); color: black; border-bottom: 1px solid white; }
 body.is-white-theme .nav__link { color: black; border-top: 1px solid #eaebec; border-bottom: 1px solid #d4d5d7; background: #e8ebed; -webkit-box-shadow: inset 1px 0 0 white, -1px 0 0 #dddee0; -moz-box-shadow: inset 1px 0 0 white, -1px 0 0 #dddee0; box-shadow: inset 1px 0 0 white, -1px 0 0 #dddee0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e8ebed)); background-image: -webkit-linear-gradient(top, #ffffff 0%, #e8ebed 100%); background-image: -moz-linear-gradient(top, #ffffff 0%, #e8ebed 100%); background-image: -o-linear-gradient(top, #ffffff 0%, #e8ebed 100%); background-image: linear-gradient(top, #ffffff 0%, #e8ebed 100%); }
 body.is-white-theme .drop-list { background: white; }
@@ -364,9 +362,8 @@ a { color: #a3a3a3; text-decoration: none; }
 .checkbox input { position: absolute; left: 0; top: 0; width: 20px; height: 20px; opacity: 0; width: 20px; height: 20px; }
 .checkbox input:checked + span { color: black; }
 .checkbox input:checked + span:after { display: block; }
-.checkbox input:checked + span:before { -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
-.checkbox span { position: relative; display: block; height: 20px; padding-left: 33px; color: #747474; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
-.checkbox span:before { content: ""; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border: 1px solid #e6e6e6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: white; -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.06); -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.06); box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.06); }
+.checkbox span { position: relative; display: block; height: 20px; padding-left: 33px; color: #747474; }
+.checkbox span:before { content: ""; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border: 1px solid #e6e6e6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: white; -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.06); -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.06); box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.06); }
 .checkbox span:after { content: ""; display: none; position: absolute; left: 6px; top: 7px; background: url('../img/icons-sda90d2b2b0.png') 0 -949px no-repeat; width: 9px; height: 7px; }
 
 .radio { position: relative; display: inline-block; padding-left: 20px; height: 20px; line-height: 20px; }
